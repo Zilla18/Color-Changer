@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   changeBTN.addEventListener("click", () => {
     colorBox.style.backgroundColor = `${getRandomColor()}`;
-    colorCode.innerHTML = `${getRandomColor()}`;
+    colorCode.innerHTML = colorBox.style.backgroundColor;
     colorCode.style.color = colorBox.style.backgroundColor;
   });
 });
